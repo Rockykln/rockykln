@@ -28,8 +28,8 @@ that puts the song you're playing into your Discord status, with cover art.
 - **[podctl](https://podctl.rockykln.com)** – Control AirPods from the Linux command line: battery, listening mode, conversation awareness. *Rust*
 - **[clientctl](https://clientctl.rockykln.com)** – Web control panel for a Linux desktop, secured with passkeys. *Python*
 
-<p align="center"><img src="https://github.com/Rockykln/Rockykln/blob/output/stats.svg?raw=true" alt="GitHub stats" width="100%"></p>
-<p align="center"><img src="https://github.com/Rockykln/Rockykln/blob/output/snake.svg?raw=true" alt="Contribution graph eaten by a snake" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/stats.svg" alt="GitHub stats" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/snake.svg" alt="Contribution graph eaten by a snake" width="100%"></p>
 
 #### Setup
 
