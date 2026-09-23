@@ -1,8 +1,9 @@
 ### Hi, I'm Rocky
 
-Developer from Germany. I build tools for the Linux desktop, mostly around
-KDE Plasma, and run [key64](https://www.key64.com), my own small platform
-with a Discord bot, dashboard, status page and CDN.
+Developer from Germany, building open-source tools for the Linux desktop:
+device control, audio and Bluetooth, mostly in Python and Rust around KDE
+Plasma and Wayland. I also run [key64](https://www.key64.com), my own small
+platform with a Discord bot, dashboard, status page and CDN.
 
 Lately I'm working my way down the stack: kernel modules, DRM and V4L2.
 
@@ -25,7 +26,7 @@ that puts the song you're playing into your Discord status, with cover art.
 
 #### More projects
 
-- **[podctl](https://podctl.rockykln.com)** – Control AirPods from the Linux command line: battery, listening mode, conversation awareness. *Rust*
+- **[podctl](https://podctl.rockykln.com)** – Control AirPods from the Linux command line: battery, listening mode, conversation awareness, auto-pause. Install from the AUR (`yay -S podctl-bin`). *Rust*
 - **[clientctl](https://clientctl.rockykln.com)** – Web control panel for a Linux desktop, secured with passkeys. *Python*
 
 <p align="center"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/stats.svg" alt="GitHub stats" width="100%"></p>
