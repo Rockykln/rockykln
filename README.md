@@ -68,6 +68,8 @@ Tested against Ubuntu, Debian, Fedora and openSUSE in Podman containers.
 
 <img src="assets/sparkedhost.png" alt="" width="18" height="18" align="top"> **Hosting:** key64 runs on [SparkedHost](https://billing.sparkedhost.com/aff.php?aff=2321) *(affiliate link)*
 
+<img src="assets/instant-gaming.svg" alt="" width="18" height="18" align="top"> **Games:** I buy mine on [Instant Gaming](https://www.instant-gaming.com/?igr=rockykln) *(affiliate link)*
+
 #### Contact
 
 [rockykln.com](https://www.rockykln.com) · [contact@rockykln.com](mailto:contact@rockykln.com)
