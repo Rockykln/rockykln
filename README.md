@@ -39,6 +39,20 @@ putting it back resumes it.
 
 **[podctl.rockykln.com](https://podctl.rockykln.com)**
 
+### nettools
+
+**Free network tools, without the ads.** IP and reverse DNS, DNS and WHOIS
+lookups, port checks, SSL and email security (SPF, DKIM, DMARC), a subnet
+calculator and a speed test. Every lookup runs on Cloudflare's network.
+
+<p align="center"><img src="assets/nettools-banner.png" alt="nettools – free network tools for IP, DNS, WHOIS and speed test" width="615"></p>
+
+- Results are rendered on the server, so they work without JavaScript and every result has a link you can share
+- Free JSON API for the same lookups
+- No ads, no cookies, no sign-up
+
+**[net.rockykln.com](https://net.rockykln.com)**
+
 #### Also
 
 - **[clientctl](https://clientctl.rockykln.com)** – Web control panel for a Linux desktop, secured with passkeys. *Python*

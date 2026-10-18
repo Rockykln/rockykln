@@ -78,7 +78,7 @@ LANG_COLORS = {
     "C": "#555555", "Go": "#00ADD8", "Lua": "#000080",
 }
 LANG_IGNORE = {"Makefile", "Dockerfile", "Nix", "Just", "CMake", "Meson"}
-PROJECTS = ["refrain", "podctl", "clientctl"]
+PROJECTS = ["refrain", "podctl", "nettools", "clientctl"]
 STACK = [
     ("linux", "#222222"), ("archlinux", "#1793D1"), ("cachyos", "#17B978"), ("kde", "#1D99F3"),
     ("bluetooth", "#0082FC"), ("podman", "#892CA0"), ("git", "#F05032"), ("githubactions", "#2088FF"),
@@ -288,7 +288,8 @@ def since(iso):
 
 
 def projects_svg(repos, w):
-    h, x, row_h = 296, 24, 56
+    x, row_h = 24, 56
+    h = 112 + len(repos) * row_h + 24
     out = sky(w, h, [(w - 220, 22, 5), (w - 90, 58, 3)])
     out.append(bird(int(w * 0.40), 26, 5, w, 24, 2))
     out.append(bird(int(w * 0.58), 54, 4, w, 30, 9, 0.7))
@@ -296,7 +297,7 @@ def projects_svg(repos, w):
     out.append(text("RELEASES AND ACTIVITY", x + 2, 70, 3, "#d9efff"))
 
     cells = [(r["name"], (r["primaryLanguage"] or {}).get("name", ""),
-              (r["latestRelease"] or {}).get("tagName", "").upper(), since(r["pushedAt"]),
+              ((r["latestRelease"] or {}).get("tagName") or "-").upper(), since(r["pushedAt"]),
               str(r["stargazerCount"])) for r in repos]
     gap = text_width("·", 3) + 22
     name_col = max(text_width(c[0], 3) for c in cells) + 28
