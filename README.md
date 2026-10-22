@@ -31,7 +31,7 @@ listening mode, conversation awareness and the settings the Apple UI hides.
 With its optional daemon, taking a bud out pauses whatever is playing and
 putting it back resumes it.
 
-<p align="center"><img src="assets/podctl-popup.png" alt="podctl popup showing battery rings for both buds and the case" width="490"></p>
+<p align="center"><img src="assets/podctl-popup.png" alt="podctl popup showing AirPods Pro 2 with battery for the buds and the case" width="615"></p>
 
 - Apple Accessory Protocol over L2CAP, written from scratch, no Bluetooth crate
 - Popup for Wayland and X11, tray icon, live state in `podctl watch`
