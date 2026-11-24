@@ -44,7 +44,7 @@ pub const PORTFOLIO: [Project; 5] = [
         install: None,
         home: "locsim.rockykln.com",
         state: State::InDevelopment,
-        stars: 19,
+        stars: 29,
         last_push: Days(0),
     },
     Project {
@@ -55,8 +55,8 @@ pub const PORTFOLIO: [Project; 5] = [
         install: Some("yay -S refrain"),
         home: "refrain.rockykln.com",
         state: State::Shipping("v0.5.6"),
-        stars: 3,
-        last_push: Days(2),
+        stars: 2,
+        last_push: Days(0),
     },
     Project {
         name: "podctl",
@@ -67,7 +67,7 @@ pub const PORTFOLIO: [Project; 5] = [
         home: "podctl.rockykln.com",
         state: State::Shipping("v0.4.0"),
         stars: 12,
-        last_push: Days(1),
+        last_push: Days(11),
     },
     Project {
         name: "nettools",
@@ -77,8 +77,8 @@ pub const PORTFOLIO: [Project; 5] = [
         install: None,
         home: "net.rockykln.com",
         state: State::Shipping("v0.1.1"),
-        stars: 2,
-        last_push: Days(0),
+        stars: 1,
+        last_push: Days(5),
     },
     Project {
         name: "clientctl",
@@ -89,7 +89,7 @@ pub const PORTFOLIO: [Project; 5] = [
         home: "clientctl.rockykln.com",
         state: State::Shipping("v0.1.1"),
         stars: 0,
-        last_push: Days(4),
+        last_push: Days(0),
     },
 ];
 // DATA:END
@@ -167,10 +167,10 @@ mod tests {
 ```
 
 <p align="center">
-  <a href="https://locsim.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-locsim.svg" alt="LocSim — in development, 19 stars"></a>
-  <a href="https://refrain.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-refrain.svg" alt="Refrain — v0.5.6, 3 stars"></a>
+  <a href="https://locsim.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-locsim.svg" alt="LocSim — in development, 29 stars"></a>
+  <a href="https://refrain.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-refrain.svg" alt="Refrain — v0.5.6, 2 stars"></a>
   <a href="https://podctl.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-podctl.svg" alt="podctl — v0.4.0, 12 stars"></a>
-  <a href="https://net.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-nettools.svg" alt="nettools — v0.1.1, 2 stars"></a>
+  <a href="https://net.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-nettools.svg" alt="nettools — v0.1.1, 1 star"></a>
   <a href="https://clientctl.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-clientctl.svg" alt="clientctl — v0.1.1, 0 stars"></a>
   
   <a href="https://github.com/Rockykln/rockykln/actions"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-tests.svg" alt="profile tests: 5 passed"></a>
