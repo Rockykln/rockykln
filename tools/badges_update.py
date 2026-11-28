@@ -17,6 +17,7 @@ PROJECTS = [
     ("refrain", "Refrain", "#3776AB", "python"),
     ("podctl", "podctl", "#dea584", "rust"),
     ("nettools", "nettools", "#3178C6", "typescript"),
+    ("mxagent", "mxagent", "#3178C6", "typescript"),
     ("clientctl", "clientctl", "#3776AB", "python"),
 ]
 QUERY = """query($name: String!) { repository(owner: "Rockykln", name: $name) {

@@ -30,12 +30,13 @@ pub struct Project {
 pub enum State {
     Shipping(&'static str),
     InDevelopment,
+    OnHold(&'static str),
 }
 
 pub struct Days(pub u32);
 
 // DATA:BEGIN
-pub const PORTFOLIO: [Project; 5] = [
+pub const PORTFOLIO: [Project; 6] = [
     Project {
         name: "LocSim",
         problem: "an iPhone cannot pretend to be elsewhere without a Mac attached",
@@ -44,17 +45,17 @@ pub const PORTFOLIO: [Project; 5] = [
         install: None,
         home: "locsim.rockykln.com",
         state: State::InDevelopment,
-        stars: 29,
-        last_push: Days(0),
+        stars: 37,
+        last_push: Days(2),
     },
     Project {
         name: "Refrain",
         problem: "Apple Music has no Linux app, so Discord never sees the song",
         answer: "read the browser or a phone over Bluetooth, post it with cover art",
-        built_with: &["Python", "MPRIS", "Last.fm", "10 languages"],
+        built_with: &["Python", "MPRIS", "Last.fm", "16 languages"],
         install: Some("yay -S refrain"),
         home: "refrain.rockykln.com",
-        state: State::Shipping("v0.5.6"),
+        state: State::Shipping("v0.6.0"),
         stars: 2,
         last_push: Days(0),
     },
@@ -65,9 +66,9 @@ pub const PORTFOLIO: [Project; 5] = [
         built_with: &["Rust", "L2CAP", "PipeWire", "BlueZ"],
         install: Some("yay -S podctl-bin"),
         home: "podctl.rockykln.com",
-        state: State::Shipping("v0.4.0"),
+        state: State::Shipping("v0.5.1"),
         stars: 12,
-        last_push: Days(11),
+        last_push: Days(0),
     },
     Project {
         name: "nettools",
@@ -78,7 +79,18 @@ pub const PORTFOLIO: [Project; 5] = [
         home: "net.rockykln.com",
         state: State::Shipping("v0.1.1"),
         stars: 1,
-        last_push: Days(5),
+        last_push: Days(2),
+    },
+    Project {
+        name: "mxagent",
+        problem: "agents that run for an hour ask their questions while I am away from the desk",
+        answer: "one encrypted Matrix room per agent, so I can answer from my phone",
+        built_with: &["TypeScript", "Matrix E2EE", "MCP"],
+        install: None,
+        home: "mxagent.rockykln.com",
+        state: State::Shipping("v1.0.1"),
+        stars: 0,
+        last_push: Days(11),
     },
     Project {
         name: "clientctl",
@@ -87,9 +99,9 @@ pub const PORTFOLIO: [Project; 5] = [
         built_with: &["Python", "WebAuthn", "KDE Plasma 6"],
         install: None,
         home: "clientctl.rockykln.com",
-        state: State::Shipping("v0.1.1"),
+        state: State::OnHold("v0.1.1"),
         stars: 0,
-        last_push: Days(0),
+        last_push: Days(4),
     },
 ];
 // DATA:END
@@ -167,10 +179,11 @@ mod tests {
 ```
 
 <p align="center">
-  <a href="https://locsim.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-locsim.svg" alt="LocSim — in development, 29 stars"></a>
-  <a href="https://refrain.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-refrain.svg" alt="Refrain — v0.5.6, 2 stars"></a>
-  <a href="https://podctl.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-podctl.svg" alt="podctl — v0.4.0, 12 stars"></a>
+  <a href="https://locsim.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-locsim.svg" alt="LocSim — in development, 37 stars"></a>
+  <a href="https://refrain.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-refrain.svg" alt="Refrain — v0.6.0, 2 stars"></a>
+  <a href="https://podctl.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-podctl.svg" alt="podctl — v0.5.1, 12 stars"></a>
   <a href="https://net.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-nettools.svg" alt="nettools — v0.1.1, 1 star"></a>
+  <a href="https://mxagent.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-mxagent.svg" alt="mxagent — v1.0.1, 0 stars"></a>
   <a href="https://clientctl.rockykln.com"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-clientctl.svg" alt="clientctl — v0.1.1, 0 stars"></a>
   
   <a href="https://github.com/Rockykln/rockykln/actions"><img src="https://raw.githubusercontent.com/Rockykln/rockykln/output/badge-tests.svg" alt="profile tests: 5 passed"></a>
